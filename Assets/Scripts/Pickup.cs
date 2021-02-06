@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    public Color normalColour;
-    public Color highlightedColour;
+    public Color normalColour = Color.white;
+    public Color highlightedColour = Color.white;
 
     private Material material;
 
-    private void Start()
+    public void Start()
     {
         material = GetComponent<Renderer>().material;
     }

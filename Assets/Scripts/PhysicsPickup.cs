@@ -7,8 +7,8 @@ public class PhysicsPickup : Pickup
 
     private Queue<Vector3> previousVelocities = new Queue<Vector3>();
     private Vector3 prevPosition;
-    public float throwBoost;
-    public int numVelocitySamples;
+    public float throwBoost = 75;
+    public int numVelocitySamples = 10;
 
     internal override void OnPickup(Grabber grabber)
     {

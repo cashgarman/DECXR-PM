@@ -33,7 +33,7 @@ public class Teleporter : MonoBehaviour
 		{
 			// Show the ray
 			ray.enabled = true;
-			
+
 			// If a raycast from the hand forward hit anything
 			if (Physics.Raycast(transform.position, transform.forward, out var hit, range))
 			{
